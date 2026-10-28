@@ -1,0 +1,16 @@
+# 本地工具配置与系统文件
+.aws/
+.codex/
+.agents/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# 缓存、日志与临时预览
+__pycache__/
+*.py[cod]
+*.log
+preview-*
+homepage.zip

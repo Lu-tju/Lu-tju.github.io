@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="卢俊杰（Junjie Lu），天津大学博士研究生。研究空中机器人、端到端运动规划、自主导航、具身智能与视觉语言导航（VLN）。">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="卢俊杰 · Junjie Lu | 学术主页">
+  <meta property="og:description" content="空中机器人、端到端运动规划、自主导航与具身智能。论文、开源代码和实机演示。">
+  <meta property="og:type" content="website">
+  <title>卢俊杰 · Junjie Lu | 学术主页</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" data-i18n="skipLink" href="#main">跳到正文</a>
+  <header class="header">
+    <nav class="nav" aria-label="主导航" data-i18n-aria="navLabel">
+      <a class="wordmark" href="#about">Junjie Lu<span class="wordmark-dot">.</span></a>
+      <div class="nav-links">
+        <a href="#about" data-i18n="navAbout">关于</a>
+        <a href="#education" data-i18n="navEducation">教育</a>
+        <a href="#publications" data-i18n="navPapers">论文</a>
+        <a href="#projects" data-i18n="navProjects">项目</a>
+        <a href="#services" data-i18n="navAwards">奖励</a>
+        <button id="language-toggle" type="button" aria-label="切换至英文">EN <span aria-hidden="true">⇄</span></button>
+      </div>
+    </nav>
+  </header>
+  <div class="layout">
+    <aside class="profile" aria-label="个人信息" data-i18n-aria="profileLabel">
+      <img id="avatar" class="avatar" src="assets/profile-current.jpg" alt="卢俊杰的个人头像" width="176" height="176">
+      <h1 id="profile-name">卢俊杰</h1>
+      <p id="latin-name" class="latin-name">Junjie Lu</p>
+      <p id="profile-role" class="profile-role">博士研究生 · 控制科学与工程</p>
+      <a id="profile-school" class="school" href="https://www.tju.edu.cn/" target="_blank" rel="noopener noreferrer">天津大学</a>
+      <p id="profile-department" class="department">电气自动化与信息工程学院</p>
+      <p id="profile-location" class="location">中国 · 天津</p>
+      <div class="profile-links" id="profile-links"></div>
+      <div class="sidebar-note"><span class="status-dot" aria-hidden="true"></span><span data-i18n="sidebarNote">探索机器人自主行动的可能</span></div>
+    </aside>
+    <main id="main">
+      <section id="about" class="intro">
+        <p class="eyebrow">ROBOTICS · LEARNING · AUTONOMY</p>
+        <h2 class="hello" data-i18n="hello">你好，我是卢俊杰<span class="hello-dot">。</span></h2>
+        <p class="welcome" data-i18n="welcome">欢迎来到我的学术主页。</p>
+        <div id="intro-copy"></div>
+        <div id="interests" class="interests" aria-label="研究方向" data-i18n-aria="interestsLabel"></div>
+      </section>
+      <section id="education">
+        <div class="section-heading"><h2 data-i18n="educationHeading">教育经历</h2><span class="section-number">01 / EDUCATION</span></div>
+        <div id="education-list" class="education-list"></div>
+      </section>
+      <section id="publications">
+        <div class="section-heading"><h2 data-i18n="papersHeading">学术论文</h2><span class="section-number">02 / PUBLICATIONS</span></div>
+        <div class="paper-toolbar">
+          <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false">Ⅱ 暂停动图</button>
+        </div>
+        <div class="publication-group" aria-labelledby="selected-papers-heading">
+          <h3 id="selected-papers-heading" class="publication-group-heading"><span data-i18n="selectedHeading">代表工作</span><span id="selected-paper-count" class="group-count">7</span></h3>
+          <div id="papers" class="research-list"></div>
+        </div>
+        <div class="publication-group" aria-labelledby="other-papers-heading">
+          <h3 id="other-papers-heading" class="publication-group-heading"><span data-i18n="otherHeading">其他论文</span><span id="other-paper-count" class="group-count">9</span></h3>
+          <div id="other-papers" class="research-list"></div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="section-heading"><h2 data-i18n="projectsHeading">科研项目</h2><span class="section-number">03 / PROJECTS</span></div>
+        <div id="project-list" class="research-list"></div>
+      </section>
+      <section id="services">
+        <div class="section-heading"><h2 data-i18n="servicesHeading">学术活动</h2><span class="section-number">04 / ACTIVITIES</span></div>
+        <ul id="services-list" class="experience-list"></ul>
+      </section>
+      <section id="honors">
+        <div class="section-heading"><h2 data-i18n="honorsHeading">荣誉奖励</h2><span class="section-number">05 / HONORS</span></div>
+        <ul id="honors-list" class="experience-list"></ul>
+      </section>
+      <footer><span id="copyright">© 2026 Junjie Lu</span><span data-i18n="footer">由 GitHub Pages 托管 · 持续探索，保持好奇</span><a href="#about" data-i18n="backTop">返回顶部 ↑</a></footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript><p class="noscript">完整的论文与项目列表需要启用 JavaScript。可通过 <a href="https://github.com/Lu-tju">GitHub</a> 查看开源工作，或发送邮件至 lqzx1998@tju.edu.cn。</p></noscript>
+</body>
+</html>
